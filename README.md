@@ -10,3 +10,5 @@ Final/Major Project at Internity Foundation
 [Preprocessing for Working Code](https://github.com/katanaml/katana-assistant/blob/master/mlmodels/katana-assistant-endpoint.py)
 
 [Major Reference - Preprocessing/NN](https://dzone.com/articles/build-it-yourself-chatbot-api-with-kerastensorflow)
+
+[Similar Food Delivery Dataset Ref](https://www.youtube.com/watch?v=RpWeNzfSUHw)
