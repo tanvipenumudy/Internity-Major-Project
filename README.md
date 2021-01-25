@@ -12,3 +12,5 @@ Final/Major Project at Internity Foundation
 [Major Reference - Preprocessing/NN](https://dzone.com/articles/build-it-yourself-chatbot-api-with-kerastensorflow)
 
 [Similar Food Delivery Dataset Ref](https://www.youtube.com/watch?v=RpWeNzfSUHw)
+
+[Similar TDS Blog](https://towardsdatascience.com/how-to-build-your-own-chatbot-using-deep-learning-bb41f970e281)
