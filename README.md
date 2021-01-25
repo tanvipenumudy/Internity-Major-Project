@@ -8,3 +8,5 @@ Final/Major Project at Internity Foundation
 [Intents JSON File for Working Code](https://github.com/katanaml/katana-assistant/blob/master/mlbackend/intents.json)
 
 [Preprocessing for Working Code](https://github.com/katanaml/katana-assistant/blob/master/mlmodels/katana-assistant-endpoint.py)
+
+[Major Reference - Preprocessing/ NN](https://dzone.com/articles/build-it-yourself-chatbot-api-with-kerastensorflow)
