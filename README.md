@@ -1,7 +1,7 @@
 # Internity-Major-Project
 Final/Major Project at Internity Foundation 
 
-# Reference Links
+### References
 
 [Base Code (GUI)](https://studygyaan.com/python/create-web-based-chatbot-in-python-django-flask)
 
