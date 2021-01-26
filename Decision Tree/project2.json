@@ -1,6 +1,6 @@
 {"intents": [
     {   "tag": "show cusines",
-        "patterns": ["what are cusines","What are available cusines","What's in the menu","Options available"],
+        "patterns": ["What are available cusines","What's in the menu","Options available"],
         "responses": ["South Indian, North Indian, Chinese, Italian"],
         "context": "cusines"
     },
