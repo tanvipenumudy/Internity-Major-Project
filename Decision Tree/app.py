@@ -6,6 +6,10 @@ import pickle
 import joblib
 import numpy as np
 
+from nltk.corpus import stopwords
+ignore_words = set(stopwords.words('english'))
+
+
 model = joblib.load('DecisionTree.pkl')
 import json
 import random
@@ -15,8 +19,7 @@ classes = pickle.load(open('labels.pkl','rb'))
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
-    
-    sentence_words = [lemmatizer.lemmatize(word.lower()) for word in sentence_words]
+    sentence_words = [lemmatizer.lemmatize(word.lower()) for word in sentence_words if word not in ignore_words]
     return sentence_words
     
     

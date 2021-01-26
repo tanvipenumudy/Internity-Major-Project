@@ -11,10 +11,12 @@ from sklearn.tree import DecisionTreeClassifier
 import joblib
 import random
 
+from nltk.corpus import stopwords
+
 words = []
 classes = []
 documents = []
-ignore_words = ['?', '!']
+ignore_words = set(stopwords.words('english'))
 data_file = open('data.json').read()
 intents = json.loads(data_file)
 
@@ -22,6 +24,7 @@ for intent in intents['intents']:
     for pattern in intent['patterns']:
         
         w = nltk.word_tokenize(pattern)
+       # w = [token for token in pattern if token not in en_stopwords]
         words.extend(w)
         
         documents.append((w, intent['tag']))
@@ -68,10 +71,7 @@ train_y = list(training[:,1])
 print("Training data created")
 
 
-model = DecisionTreeClassifier(criterion="gini")
+model = DecisionTreeClassifier(criterion="entropy")
 model.fit(np.array(train_x), np.array(train_y))
 joblib.dump(model, 'DecisionTree.pkl')
 print("model created")
-
-
-    
