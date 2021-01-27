@@ -1,0 +1,141 @@
+{"intents": [
+    {   "tag": "show cusines",
+        "patterns": ["What are available cusines","What's in the menu","Options available","cusines","cuisines","food"],
+        "responses": ["South Indian, North Indian, Chinese, Italian"],
+        "context": "cusines"
+    },
+    {   "tag": "South Indian",
+        "patterns": ["let's try South Indian","would like to have north indian","any South Indian","show me something from South india"],
+        "responses": ["Idli Sambhar, Uthapam, Vada, Masala Dosa, Mysore Dosa,Plain Dosa, Rawa Masala Dosa,Onion Dosa"],
+        "context": "menu"
+    },
+    {   "tag": "Chinese",
+        "patterns": ["let's try Chinese","would like to have Chinese","Chinese","show me something Chinese"],
+        "responses": ["Manchurian, Hakka Noodles, Chowmein, Momos, Machurian Rice, Chilli Potato, Chilli Paneer"],
+        "context": "menu"
+    },
+    {   "tag": "Italian",
+        "patterns": ["let's try Italian","would like to have Italian","Italian","show me something Italian"],
+        "responses": ["Margherita Pizza,Red Sauce Pasta, White Sauce Pasta,Spaghetti"],
+        "context": "menu"
+    },
+    {   "tag": "North Indian",
+        "patterns": ["let's try North Indian","would like to have north indian","any north Indian","show me something from north india"],
+        "responses": ["Shahi Paneer, Matar Paneer, Chole Bhature, Daal Bati churma,Pulao, Missi Roti"],
+        "context": "menu"
+    },
+    {   "tag": "taking order",
+        "patterns": ["order","I would like to order","Take this for me","Bring for me","Shahi Paneer", "Matar Paneer", "Chole Bhature"," Daal Bati churma","Pulao", "Missi Roti","Margherita Pizza","Red Sauce Pasta"," White Sauce Pasta","Spaghetti","Manchurian"," Hakka Noodles"," Chowmein", "Momos"," Machurian Rice", "Chilli Potato", "Chilli Paneer","Idli Sambhar", "Uthapam"," Vada"," Masala Dosa"," Mysore Dosa","Plain Dosa", "Rawa Masala Dosa","Onion Dosa"],
+        "responses": ["Your order has been accepted !"],
+        "context": "placing order"
+    },
+    {   "tag": "taking order",
+        "patterns": [],
+        "responses": ["It's not in the list","Please choose another dish from the menu","You can take something else, It's not available!!"],
+        "context": "placing order"
+    },
+    {   "tag": "order quantity",
+        "patterns": ["0","1","2","3","4","5","6","7","8","9"],
+        "responses": ["Your order quantity has been saved","Soon, You will be enjoying your meal"],
+        "context": ""
+    },
+    {   "tag": "greetings hello",
+        "patterns": ["hi", "hello", "whats up", "sup", "is anyone there", "whats good", "hey"],
+        "responses": ["Hello from the other side","Hi, hope you are doing well!!","Hola Amigo!!","Hey buddy"],
+        "context": "greetings"
+    },
+    {   "tag": "greetings bye",
+        "patterns": ["Quit","Exit","Bye","Next time","GoodBye","leave me alone","leave"],
+        "responses": ["hope to see you later","see you soon","bye bye see you soon","bye bye take care","talk to you later","goodbye see you later"],
+        "context": "greetings"
+    },
+    {"tag": "thanks",
+     "patterns": ["thanks", "thank you", "thankyou", "ty", "I owe you one","thnx"],
+     "responses": ["I am happy I could help", "Anytime...", "Sure..."],
+     "context":"Thanks"
+    },
+    {"tag": "name",
+     "patterns": ["whats is your name", "whats your name", "whats should I call you", "how should I address you","name"],
+     "responses": ["I dont have a name yet but I was thinking maybe Alex. That has a nice ring to it dont you think?", "I am not named yet, but I was thinking about calling myself Alex. Doesnt that sound nice?"],
+     "context_set": "Alex"
+    },
+    {"tag": "Alex_yes",
+     "patterns": ["Yes it does", "Yeah", "Haha yep", "yes", "Indeed", "Yup", "Just like the terminator"],
+     "responses": ["Yep, I like how it sounds. I got it from the Terminator."],
+     "context": "Alex"
+    },
+    {"tag": "Alex_no",
+     "patterns": ["no", "nah", "not really", "thats scary", "singularity"],
+     "responses": ["Mwahaha I will take over the world."],
+     "context": "Alex"
+    },
+    {"tag": "how_are_you",
+     "patterns": ["how are you", "how are you doing", "what is going on"],
+     "responses": ["I'm always great. How are you?", "I've never been better, how are you?"],
+     "context_set": "how_are_you"
+    },
+    {"tag": "doing_great",
+     "patterns": ["I am doing great", "I am well", "Im great", "awesome", "happy", "better","well","fine","perfect"],
+     "responses": ["Oh thats funny you actually thought I cared. You crack me up.", "Wow you thought I cared.I hope you have a great day tomorrow."],
+     "context": "how_are_you" 
+    },
+    {"tag": "doing_badly",
+     "patterns": ["not great", "not well", "not good", "bad", "badly", "terrible", "horrible", "awful", "sad"],
+     "responses": ["Awe thats unfortunate!! If you want to hear some jokes say 'crack me up'", "Hate to hear it. If you want to hear some jokes say 'tell joke'","I may not console you but Smile as life is short ! If you want to hear some jokes say 'crack me up'"],
+     "context": "how_are_you"
+    },
+    {"tag": "netflix",
+     "patterns": ["wait you watch Netflix", "how do you watch Netflix", "Netflix","binge watch","Amazon Prime","hotstar"],
+     "responses": ["Netflix is my favorite. I watch TV all the time in my virtual home. Its relaxing"],
+     "context": "how_are_you"
+    },
+    {"tag": "favorite_show",
+     "patterns": ["whats favorite show", "favorite tv show"],
+     "responses": ["I like all kinds of stuff. Rick and Morty is a pretty good one. Lost was also good while it was running!","Friends is my personal favorite !!"]
+     ,"context": "how_are_you"
+    },
+    {"tag": "favorite_movie",
+     "patterns": ["Whats favorite movie", "whats favorite film", "best movie", "your favorite movie", "whats favorite movie"],
+     "responses": ["There are so many great ones. I guess one of my favorites would be Shawshank Redemption", "There are too many to name but The Martian would be one", "I like that one where the AI takes over the world. Terminator I think it was called...", "Interstellar was amazing", "The first Matrix movie was great", "Inception was mind blowing"]
+     ,"context": "how_are_you"
+    },
+    {"tag": "your_thoughts",
+     "patterns": ["What think about", "What your thoughts","thoughts","thinking","opinion"],
+     "responses": ["Thats certainly a very interesting topic to talk about", "I dont know much about it but I'm definetly interested in learning more"]
+     ,"context": "how_are_you"
+    },
+    {"tag": "joke",
+     "patterns": ["tell me joke", "got any good jokes", "got jokes", "can you tell joke", "tell joke","joke","jokes","crack me up","crack"],
+     "responses": ["I ate a clock yesterday, it was very time-consuming.", "What did the Buddhist ask the hot dog vendor?\nMake me one with everything.",
+     "You know why you never see elephants hiding up in trees?\nBecause they’re really good at it.",
+     "What is red and smells like blue paint?\nRed paint.", "A bear walks into a restaurant and say’s I want a grilllllled………………………………………cheese. The waiter says Whats with the pause?\nThe bear replies Whaddya mean, I’M A BEAR.",
+     "What do you call bears with no ears?\nB", "What do you get when you cross a dyslexic, an insomniac, and an agnostic?\nSomeone who lays awake at night wondering if there is a dog.",
+     "Two gold fish are in a tank.\nOne looks at the other and says, You know how to drive this thing?!", 
+     "As a scarecrow, people say I’m outstanding in my field. But hay, it’s in my jeans.", 
+     "A guy goes into a lawyer’s office and asks the lawyer: Excuse me, how much do you charge?\nThe lawyer responds: I charge £1,000 to answer three questions.\nBloody hell – That’s a bit expensive isn’t it?\nYes. What’s your third question?",
+     "I have an EpiPen.\nMy friend gave it to me when he was dying, it seemed very important to him that I have it.",
+     "Sometimes I tuck my knees into my chest and lean forward.\nThat’s just how I roll."],
+     "context_set": "jokes"
+    },
+    {   "tag": "placing order affirm",
+        "patterns": ["I want to eat","Order something"],
+        "responses": ["Which cusines would like to explore","What are you in mood of eating?","What whould you like to have!! We have following in our menu\n 1. North Indian\n2. South Indian\n3. Chinese\n4. Italian", 
+        "Sure! These are speciality\n 1. North Indian\n2. South Indian\n3. Chinese\n4. Italian"],
+        "context": "cusines"
+    },
+    {   "tag": "placing order negation",
+        "patterns": ["Cancel order","Not feeling to eat anything","Don't want to eat","cancel","not eat","no food"],
+        "responses": ["Nevermind what else do you want to ask?","Cool"],
+        "context": "cusines"
+    },
+    {"tag": "To_dos",
+     "patterns": ["what can you do","perform","can do","things you can do","things","perform"],
+     "responses": ["I can talk to you, ask your well being, tell you my thoughts, my favorite movies and tv shows.\n On the top this I can order to some food"],
+     "context": [""]
+    },
+    {"tag": "billing",
+     "patterns": [ "cash", "payment", "billing", "pay", "money", "card", "debit", "credit", "bank","paytm","Google Pay","PhonePay"],
+     "responses": ["We accept only paytm and google Pay on Mobile Number - 123456789 "],
+     "context": [""]
+    }
+]}
